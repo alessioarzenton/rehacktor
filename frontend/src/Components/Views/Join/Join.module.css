@@ -1,0 +1,38 @@
+.wrapperTracks {
+  position: relative;
+}
+.streamer {
+  width: 100%;
+}
+.streamer > video {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid cyan;
+}
+
+.streamerBlock {
+  position: absolute;
+  bottom: -35px;
+  left: calc(50% - 70px);
+  z-index: 999;
+  padding: 4px 20px;
+}
+
+.viewer > video {
+  border: 2px solid cyan;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.label {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  position: relative;
+  bottom: -10px;
+  background-color: rgba(0, 255, 255, 0.5);
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
