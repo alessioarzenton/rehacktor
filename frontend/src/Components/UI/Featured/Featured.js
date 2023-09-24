@@ -19,8 +19,8 @@ export default function Featured() {
   }, [api_urls.games, api_secrets.games]);
 
   return (
-    <div className="container mt-5">
-      <div className="row">
+    <div className="container my-5">
+      <div className="row gy-4" >
         {featured &&
           featured.map((el) => {
             return (

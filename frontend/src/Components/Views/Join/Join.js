@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, useContext } from "react";
 
 import { useParams } from "react-router";
 import { joinStreaming } from "./../../../utilities/twilio";
-import Loader from "../../UI/Loader/Loader";
+import Loadering from "../../UI/Loader/Loader";
 import { Link } from "react-router-dom";
 import { ConfigContext } from "../../../Contexts/Config";
 
@@ -79,7 +79,7 @@ export default function Join() {
   }, []);
 
   const showLoading = () => {
-    if (status === loading) return <Loader />;
+    if (status === loading) return <Loadering />;
   };
 
   const showFull = () => {

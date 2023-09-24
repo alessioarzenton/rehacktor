@@ -1,51 +1,44 @@
-@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --main-color: #ff659d;
+  --black: #000000;
+  --white: #ffffff;
+}
 
 body {
-  background-color: #222;
-  color: white;
+  background-color: #000;
+  color: var(--white);
 }
 
 .text-main {
-  color: cyan;
+  color: var(--main-color);
 }
 
 .text-main:hover {
-  color: cyan !important;
+  color: var(--main-color) !important;
 }
 
 .bg-main {
-  background-color: cyan;
+  background-color: var(--main-color);
 }
 
 .bg-black {
-  background-color: #222 !important;
+  background-color: var(--black) !important;
 }
 
 * {
-  font-family: "Electrolize", sans-serif;
-}
-
-@font-face {
-  font-family: "Exan";
-  src: url("./Assets/Exan-Regular.ttf");
-}
-
-.font-exan {
-  font-family: "Exan";
-}
-
-.font-exan:hover {
-  color: cyan;
+  font-family: "Roboto", sans-serif;
 }
 
 .bg-black {
-  background-color: #000;
+  background-color: var(--black);
 }
 .bg-footer-hover:hover {
   background-color: #111;
 }
 
-.bg-cyan {
+.bg-main-color {
   background: linear-gradient(
     to right,
     rgba(18, 55, 55, 1),
@@ -74,8 +67,8 @@ body {
   left: 0px;
   height: 30px;
   width: 30px;
-  border-left: 2px solid cyan;
-  border-top: 2px solid cyan;
+  border-left: 2px solid var(--main-color);
+  border-top: 2px solid var(--main-color);
 }
 
 .sign-top::after {
@@ -85,8 +78,8 @@ body {
   right: 0px;
   height: 30px;
   width: 30px;
-  border-right: 2px solid cyan;
-  border-top: 2px solid cyan;
+  border-right: 2px solid var(--main-color);
+  border-top: 2px solid var(--main-color);
 }
 
 .sign-bottom {
@@ -104,8 +97,8 @@ body {
   left: 0px;
   height: 30px;
   width: 30px;
-  border-left: 2px solid cyan;
-  border-bottom: 2px solid cyan;
+  border-left: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 .sign-bottom::before {
@@ -115,6 +108,29 @@ body {
   right: 0px;
   width: 30px;
   height: 30px;
-  border-right: 2px solid cyan;
-  border-bottom: 2px solid cyan;
+  border-right: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+
+.border-info {
+  border-color: var(--main-color) !important;
+}
+.btn-outline-info {
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+.btn-outline-info:hover {
+  color: var(--black);
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.btn-check:focus+.btn-outline-info, .btn-outline-info:focus {
+  box-shadow: none;
+}
+.form-control:focus {
+  color: var(--white);
+  background-color: transparent;
+  border-color: var(--main-color);
+  outline: 0;
+  box-shadow: none;
 }

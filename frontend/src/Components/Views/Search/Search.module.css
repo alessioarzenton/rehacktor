@@ -1,6 +1,6 @@
 .bg-info {
-  background: linear-gradient(#222 5%, rgba(33, 37, 41, 0.6), #222),
+  /* background: linear-gradient(#222 5%, rgba(33, 37, 41, 0.6), #222),
     url("./../../../Assets/grid.png"), url("./../../../Assets/sky.jpg");
-  background-size: cover, 120px, cover;
+  background-size: cover, 120px, cover; */
   background-position: center, center, center;
 }

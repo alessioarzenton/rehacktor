@@ -48,12 +48,10 @@ export default function Navbar() {
       }
     >
       <div className="container-fluid">
-        <Link className="text-decoration-none font-exan text-main" to="/">
+        <Link className="text-decoration-none fw-bold text-main" to="/">
           <i className="fab fa-react fa-spin me-3"></i>
           ReHacktor
         </Link>
-
-        <div className={classes.navLogo}></div>
 
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">

@@ -7,7 +7,7 @@ export default function Sign() {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className={"container-fluid min-vh-100 " + classes.bg}>
+    <div className={"container-fluid my-5 py-5 min-vh-100 " + classes.bg}>
       <div className="container">
         <div className="row justify-content-center align-items-center min-vh-100">
           <div className="col-12 col-md-8 col-lg-6 text-center">
