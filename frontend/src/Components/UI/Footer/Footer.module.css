@@ -1,3 +1,4 @@
 .footer{
+  background-color: var(--bg-header-footer);  
   border-top: 1px solid var(--main-color);
 }

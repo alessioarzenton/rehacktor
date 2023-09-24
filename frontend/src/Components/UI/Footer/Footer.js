@@ -4,11 +4,11 @@ export default function Footer() {
   return (
     <div
       className=
-        {"container-fluid pb-2 position-relative bg-black " + classes.footer}
+        {"container-fluid pb-2 position-relative " + classes.footer}
     >
       <div className="row px-md-5 align-items-center">
         <div className="col-12 col-md-4 py-3 py-md-5 ">
-        <div className="fw-bold text-main">rehacktor</div>
+        <div className="fw-bold text-main">ReHacktor</div>
           <p className="small mb-0">
             Explore a vast catalog of video games, register and let your friends
             watch your games.

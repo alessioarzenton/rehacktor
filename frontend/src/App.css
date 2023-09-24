@@ -1,136 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 :root {
-  --main-color: #ff659d;
-  --black: #000000;
-  --white: #ffffff;
+    --main-color: #ffffff;
+    --bg-header-footer: #1a1a1a;
+    --red: #fb3f4a;
+    --black: #000000;
+    --white: #ffffff;
+    --navbar-height: 60px;
 }
 
 body {
-  background-color: #000;
-  color: var(--white);
+    background-color: #000;
+    color: var(--white);
 }
 
 .text-main {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
 .text-main:hover {
-  color: var(--main-color) !important;
+    color: var(--red) !important;
 }
 
 .bg-main {
-  background-color: var(--main-color);
+    background-color: var(--main-color);
 }
 
 .bg-black {
-  background-color: var(--black) !important;
+    background-color: var(--black) !important;
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .bg-black {
-  background-color: var(--black);
+    background-color: var(--black);
 }
 .bg-footer-hover:hover {
-  background-color: #111;
+    background-color: #111;
 }
 
 .bg-main-color {
-  background: linear-gradient(
-    to right,
-    rgba(18, 55, 55, 1),
-    rgba(18, 55, 55, 1)
-  );
+    background: linear-gradient(
+        to right,
+        rgba(18, 55, 55, 1),
+        rgba(18, 55, 55, 1)
+    );
 }
 
 .sign-form {
-  position: relative;
-  padding: 30px;
-  backdrop-filter: blur(8px);
+    position: relative;
+    padding: 30px;
+    backdrop-filter: blur(8px);
 }
 
 .sign-top {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
 }
 
 .sign-top::before {
-  position: absolute;
-  content: "";
-  top: 0px;
-  left: 0px;
-  height: 30px;
-  width: 30px;
-  border-left: 2px solid var(--main-color);
-  border-top: 2px solid var(--main-color);
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 30px;
+    border-left: 2px solid var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 .sign-top::after {
-  position: absolute;
-  content: "";
-  top: 0px;
-  right: 0px;
-  height: 30px;
-  width: 30px;
-  border-right: 2px solid var(--main-color);
-  border-top: 2px solid var(--main-color);
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0px;
+    height: 30px;
+    width: 30px;
+    border-right: 2px solid var(--main-color);
+    border-top: 2px solid var(--main-color);
 }
 
 .sign-bottom {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  height: 30px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
 }
 
 .sign-bottom::after {
-  position: absolute;
-  content: "";
-  top: 0px;
-  left: 0px;
-  height: 30px;
-  width: 30px;
-  border-left: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color);
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    width: 30px;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
 }
 
 .sign-bottom::before {
-  position: absolute;
-  content: "";
-  top: 0px;
-  right: 0px;
-  width: 30px;
-  height: 30px;
-  border-right: 2px solid var(--main-color);
-  border-bottom: 2px solid var(--main-color);
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    border-right: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
 }
 
 .border-info {
-  border-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
 }
 .btn-outline-info {
-  color: var(--main-color);
-  border-color: var(--main-color);
+    color: var(--main-color);
+    border-color: var(--main-color);
 }
 .btn-outline-info:hover {
-  color: var(--black);
-  background-color: var(--main-color);
-  border-color: var(--main-color);
+    color: var(--black);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
 }
-.btn-check:focus+.btn-outline-info, .btn-outline-info:focus {
-  box-shadow: none;
+.btn-check:focus + .btn-outline-info,
+.btn-outline-info:focus {
+    box-shadow: none;
 }
 .form-control:focus {
-  color: var(--white);
-  background-color: transparent;
-  border-color: var(--main-color);
-  outline: 0;
-  box-shadow: none;
+    color: var(--white);
+    background-color: transparent;
+    border-color: var(--main-color);
+    outline: 0;
+    box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
+    .image-single {
+        position: sticky;
+        top: calc(var(--navbar-height) + 30px);
+    }
 }

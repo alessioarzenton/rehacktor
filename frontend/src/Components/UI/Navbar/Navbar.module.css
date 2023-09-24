@@ -1,52 +1,6 @@
 .navbar {
-  background: var(--black);
+  background-color: var(--bg-header-footer);
   color: var(--white);
   border-bottom: 1px solid var(--main-color);
+  height: var(--navbar-height);
 }
-
-/* .navbar::after {
-  position: absolute;
-  content: "";
-  bottom: -1px;
-  left: 0px;
-  height: 1px;
-  width: 100%;
-  background: linear-gradient(90deg, transparent 77px, var(--main-color) 77px);
-} */
-
-/* .navLogo {
-  position: fixed;
-  top: 35px;
-  left: 0px;
-  width: 60px;
-  height: 36px;
-  background-color: rgba(18, 55, 55, 1);
-  border-bottom: 2px solid var(--main-color);
-  z-index: -1;
-} */
-
-/* .navLogo::after {
-  position: absolute;
-  content: "";
-  bottom: -2px;
-  right: -9px;
-  width: 4px;
-  height: 15px;
-  background-color: white;
-  transform: skew(-50deg);
-  box-shadow: 0 0 2px 0 rgb(255 255 255 / 100%),
-    0px 0px 5px 1px rgb(12 145 255 / 100%);
-  z-index: 9;
-} */
-
-/* .navLogo::before {
-  position: absolute;
-  content: "";
-  bottom: 2px;
-  right: -12px;
-  width: 18px;
-  z-index: 0;
-  height: 18px;
-  background-color: rgba(18, 55, 55, 1);
-  transform: skew(-50deg);
-} */

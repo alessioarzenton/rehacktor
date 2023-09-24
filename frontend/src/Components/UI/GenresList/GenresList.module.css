@@ -3,6 +3,13 @@
   overflow-y: scroll;
 }
 
+@media screen and (min-width: 768px) {
+  .genres-wrapper {
+    position: sticky;
+    top: calc(var(--navbar-height) + 30px);
+  }
+}
+
 .genres-wrapper button:hover {
   padding-left: 30px;
   transition: 0.3s;

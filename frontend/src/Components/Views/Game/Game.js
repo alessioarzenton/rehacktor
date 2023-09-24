@@ -62,13 +62,13 @@ export default function Game() {
                                 ) : null}
                             </div>
                         </div>
-                        <div className="row mt-5">
+                        <div className="row my-5 g-3">
                             <div className="col-12 col-md-6">
                                 {game.description_raw}
                             </div>
                             <div className="col-12 col-md-6">
                                 <img
-                                    className="img-fluid"
+                                    className="img-fluid image-single"
                                     src={game.background_image}
                                     alt={game.name}
                                 />
